@@ -1,0 +1,14 @@
+services:
+  projectdb:
+    image: mysql:latest
+    container_name: projectdb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: operis-project
+    ports:
+      - "4444:3306"
+    volumes:
+      - projectdb-data:/var/lib/mysql
+
+volumes:
+  projectdb-data:
