@@ -21,6 +21,7 @@
 
         <module>operis-project</module>
         <module>operis-discovery</module>
+        <module>operis-gateway</module>
     </modules>
 
     <properties>
